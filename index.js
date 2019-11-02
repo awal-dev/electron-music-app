@@ -43,7 +43,6 @@ function playSong(index){
     $('h4').text(songData.title[index])
     updatePlayButton()
     timer = setInterval(updateTime, 1000)
-    songData = {path:[], title:[]}
 }
 
 
@@ -83,6 +82,7 @@ function clearPlaylist(){
     playing = false
     $('h4').text('')
     updatePlayButton()
+    songData = {path:[], title:[]}
 }
 
 function updateTime(){
