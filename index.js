@@ -105,6 +105,10 @@ function updatePlayButton(){
     }
 }
 
+function changeVolume(input){
+    audioPlayer.volume = input.value
+}
+
 function secondsToTime(t) {
     return padZero(parseInt((t / (60)) % 60)) + ":" + 
            padZero(parseInt((t) % 60));
